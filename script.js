@@ -41,7 +41,10 @@ button.addEventListener("click", async () => {
     windTemp.textContent = `Wind Temperature: ${data.current.wind_degree}°C`;
     humidity.textContent = `Humidity: ${data.current.humidity}%`;
     condition.textContent = `Condition: ${data.current.condition.text}`;
-  } catch (error) {
+  } 
+
+
+catch (error) {
     console.error("Error fetching data:", error);
     cityName.textContent = "Failed to fetch data";
     region.textContent = "Failed to fetch data";
