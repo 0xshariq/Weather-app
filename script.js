@@ -14,6 +14,8 @@ const condition = document.querySelector(".condition");
 const BASE_URL =
   "https://api.weatherapi.com/v1/current.json?key=af7e85bdbb3e46a7946145455241707";
 
+
+//main code
 button.addEventListener("click", async () => {
   try {
     const URL = `${BASE_URL}&q=${inputBox.value}`;
@@ -53,6 +55,9 @@ button.addEventListener("click", async () => {
     condition.textContent = "Failed to fetch data";
   }
 });
+
+
+//reset button
 reset.addEventListener("click", () => {
     inputBox.value = "";
     cityName.textContent = "";
